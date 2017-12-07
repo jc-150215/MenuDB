@@ -15,7 +15,6 @@ namespace Menu
 
             MainPage = new Menu.MainPage();
         }
-
         protected override void OnStart()
         {
             // Handle when your app starts

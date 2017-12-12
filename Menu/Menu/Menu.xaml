@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Menu.Menu">
+    <ContentPage.Content>
+        
+        <StackLayout Orientation="Vertical">
+            
+
+            <StackLayout Orientation="Horizontal">
+                <Picker x:Name="Sort" Title="並び替え">
+                    <Picker.Items>
+                        <x:String>五十音順</x:String>
+                        <x:String>負荷度</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <SearchBar x:Name="Select" SearchButtonPressed="select_SearchButtonPressed"/>
+
+
+            <ListView x:Name="listView"/>
+
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

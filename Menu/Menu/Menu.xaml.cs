@@ -16,12 +16,23 @@ namespace Menu
         {
             InitializeComponent();
 
+            ArrayList myAL = new ArrayList();
+            myAL.Add("The");
+            myAL.Add("quick");
+            myAL.Add("brown");
+            myAL.Add("fox");
+            myAL.Add("jumped");
+
             // iOSだけ、上部に余白をとる
             this.Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
 
             // ListViewを生成する
-            //100行「item-0～item-99」のリストを作成
-            this.listView.ItemsSource = Enumerable.Range(0, 100).Select(n => $"item-{n}");
+            this.listView.ItemsSource = myAL;
+        }
+
+        private void Select_SearchButtonPressed(object sender, EventArgs e)
+        {
+            DisplayAlert("", this.sb.Text, "OK"); 
         }
     }
 }

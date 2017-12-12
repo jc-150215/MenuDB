@@ -16,23 +16,18 @@ namespace Menu
         {
             InitializeComponent();
 
-            ArrayList myAL = new ArrayList();
-            myAL.Add("The");
-            myAL.Add("quick");
-            myAL.Add("brown");
-            myAL.Add("fox");
-            myAL.Add("jumped");
-
             // iOSだけ、上部に余白をとる
             this.Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
 
+            int[] array1 = new int[] { 1, 3, 5, 7, 9 };
+
             // ListViewを生成する
-            this.listView.ItemsSource = myAL;
+            this.listView.ItemsSource = array1;
         }
 
         private void Select_SearchButtonPressed(object sender, EventArgs e)
         {
-            DisplayAlert("", this.sb.Text, "OK"); 
+            //DisplayAlert("", this.sb.Text, "OK"); 
         }
     }
 }

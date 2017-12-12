@@ -16,7 +16,7 @@
                 </Picker>
             </StackLayout>
 
-            <SearchBar x:Name="Select" SearchButtonPressed="select_SearchButtonPressed"/>
+            <SearchBar x:Name="Select"/>
 
 
             <ListView x:Name="listView"/>

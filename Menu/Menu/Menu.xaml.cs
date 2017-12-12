@@ -19,7 +19,7 @@ namespace Menu
             // iOSだけ、上部に余白をとる
             this.Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
 
-            int[] array1 = new int[] { 1, 3, 5, 7, 9 };
+            String[] array1 = new String[] { bbbbb, ccccc, ggggg, eeeee, aaaaa };
 
             // ListViewを生成する
             this.listView.ItemsSource = array1;
@@ -27,7 +27,7 @@ namespace Menu
 
         private void Select_SearchButtonPressed(object sender, EventArgs e)
         {
-            //DisplayAlert("", this.sb.Text, "OK"); 
+            DisplayAlert("", SearchCommand, "OK");
         }
     }
 }

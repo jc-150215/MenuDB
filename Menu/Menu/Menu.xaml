@@ -3,22 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Menu.Menu">
     <ContentPage.Content>
-        
+
         <StackLayout Orientation="Vertical">
-            
 
-            <StackLayout Orientation="Horizontal">
-
-                <Picker x:Name="Sort" Title="並び替え">
+            <Picker x:Name="Sort" Title="並び替え">
                     <Picker.Items>
                         <x:String>五十音順</x:String>
                         <x:String>負荷度</x:String>
                     </Picker.Items>
                 </Picker>
                 
-                <SearchBar x:Name="Select" SearchButtonPressed="Select_SearchButtonPressed"/>
+                <SearchBar x:Name="Select" 
+                           Placeholder = "入力してください"
+                           SearchButtonPressed="Select_SearchButtonPressed"/>
                 
-            </StackLayout>
 
 
             <ListView x:Name="listView"

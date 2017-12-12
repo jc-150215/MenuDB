@@ -13,7 +13,7 @@ namespace Menu
         {
             InitializeComponent();
 
-            Menu = new Menu.Menu();
+            Menu = new  Menu();
         }
         protected override void OnStart()
         {

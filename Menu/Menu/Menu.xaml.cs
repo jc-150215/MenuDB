@@ -10,52 +10,38 @@ using Xamarin.Forms.Xaml;
 namespace Menu
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Menu : TabbedPage
+    public partial class Menu : ContentPage
     {
         public Menu()
         {
-            //InitializeComponent();
+            InitializeComponent();
 
-            int[] array1 = new int[] { 1, 2, 3, 4, 5 };
 
-            this.Padding = new Thickness
-            {
-                //iOSの場合にのみ画面上部に20ピクセルのスペースを空ける
-                Top = Device.OnPlatform(20, 0, 0)
-            };
+            int[] array1 = new int[] { 2, 3, 1, 5, 6 };
 
-            //Childrenプロパティにページをそのまま追加
-            var tab1 = new ContentPage
-            {
-                Content = new ListView
-                {
-                    // ListViewを生成する
-                    this.listView.ItemsSource = array1,
-                },
-            
-            };
-
-            //ContentPageクラスのインスタンスを生成
-            var tab2 = new ContentPage
-            {
-            };
-
-            //ContentPageクラス内でコントロールを作成
-            var tab3 = new ContentPage
-            {
-               
-            };
-
-            //tab2, tab3をChildrenプロパティに追加
-            this.Children.Add(tab1);
-            this.Children.Add(tab2);
-            this.Children.Add(tab3);
-
+            // ListViewを生成する
+            this.listView.ItemsSource = array1;
         }
 
         private void Select_SearchButtonPressed(object sender, EventArgs e)
         {
             //DisplayAlert("", SearchCommand, "OK");
+        }
+
+        private void 昇順_Clicked(object sender, EventArgs e)
+        {
+            int[] array1 = new int[] { 1, 2, 3, 4, 5 };
+
+            // ListViewを生成する
+            this.listView.ItemsSource = array1;
+        }
+
+        private void 降順_Clicked(object sender, EventArgs e)
+        {
+            int[] array1 = new int[] { 5, 4, 3, 2, 1 };
+
+            // ListViewを生成する
+            this.listView.ItemsSource = array1;
         }
     }
 }

@@ -7,7 +7,11 @@
     <ContentPage.Padding>
         
         <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0"/>
-        
+      
+    </ContentPage.Padding>
+
+    <!--タブ1ページ目-->
+    <ContentPage Title="Tab1">
         <StackLayout Orientation="Vertical">
             <Picker x:Name="Sort" Title="並び替え">
                 <Picker.Items>
@@ -15,22 +19,15 @@
                     <x:String>負荷度</x:String>
                 </Picker.Items>
             </Picker>
-        </StackLayout>
 
-        <SearchBar x:Name="Select" 
+
+            <SearchBar x:Name="Select" 
                            Placeholder = "入力してください"
                            SearchButtonPressed="Select_SearchButtonPressed"/>
 
-        <ListView x:Name="listView"
+            <ListView x:Name="listView"
                       SeparatorColor="Black"/>
-
-
-
-    </ContentPage.Padding>
-
-    <!--タブ1ページ目-->
-    <ContentPage Title="Tab1">
-        <BoxView Color="Red"/>
+        </StackLayout>
     </ContentPage>
 
     <!--タブ2ページ目-->

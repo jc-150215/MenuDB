@@ -14,12 +14,9 @@ namespace Menu
     {
         public Menu()
         {
-            InitializeComponent();
+            //InitializeComponent();
 
-            //int[] array1 = new int[] { 1, 2, 3, 4, 5 };
-
-            // ListViewを生成する
-            //this.listView.ItemsSource = array1;
+            int[] array1 = new int[] { 1, 2, 3, 4, 5 };
 
             this.Padding = new Thickness
             {
@@ -28,32 +25,29 @@ namespace Menu
             };
 
             //Childrenプロパティにページをそのまま追加
-            this.Children.Add(
-                new ContentPage
+            var tab1 = new ContentPage
+            {
+                Content = new ListView
                 {
-                    Title = "Red",
-                    BackgroundColor = Color.Red,
-                }
-            );
+                    // ListViewを生成する
+                    this.listView.ItemsSource = array1,
+                },
+            
+            };
 
             //ContentPageクラスのインスタンスを生成
             var tab2 = new ContentPage
             {
-                Title = "Blue",
-                BackgroundColor = Color.Blue,
             };
 
             //ContentPageクラス内でコントロールを作成
             var tab3 = new ContentPage
             {
-                Title = "Green",
-                Content = new BoxView
-                {
-                    BackgroundColor = Color.Green,
-                },
+               
             };
 
             //tab2, tab3をChildrenプロパティに追加
+            this.Children.Add(tab1);
             this.Children.Add(tab2);
             this.Children.Add(tab3);
 

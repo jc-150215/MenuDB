@@ -1,43 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="OXamarin.Menu">
+             x:Class="Menu.Menu">
+    <ContentPage.Content>
 
-    <!--iOSの場合は上部に余白を設ける-->
-    <ContentPage.Padding>
-        
-        <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0"/>
-      
-    </ContentPage.Padding>
-
-    <!--タブ1ページ目-->
-    <ContentPage Title="Tab1">
         <StackLayout Orientation="Vertical">
-            <Picker x:Name="Sort" Title="並び替え">
-                <Picker.Items>
-                    <x:String>五十音順</x:String>
-                    <x:String>負荷度</x:String>
-                </Picker.Items>
-            </Picker>
-        
 
-        <SearchBar x:Name="Select" 
+            <Picker x:Name="Sort" Title="並び替え">
+                    <Picker.Items>
+                        <x:String>五十音順</x:String>
+                        <x:String>負荷度</x:String>
+                    </Picker.Items>
+                </Picker>
+
+            <SearchBar x:Name="Select" 
                            Placeholder = "入力してください"
                            SearchButtonPressed="Select_SearchButtonPressed"/>
 
-        <ListView x:Name="listView"
+            <StackLayout Orientation="Horizontal">
+                
+                <Button x:Name="昇順"
+                        Clicked="昇順_Clicked"/>
+                
+                <Button x:Name="降順"
+                        Clicked="降順_Clicked"/>
+
+            </StackLayout>
+
+            <ListView x:Name="listView"
                       SeparatorColor="Black"/>
+            
+            
+
+
+
         </StackLayout>
-    </ContentPage>
 
-    <!--タブ2ページ目-->
-    <ContentPage Title="Tab2">
-        <BoxView Color="Blue"/>
-    </ContentPage>
-
-    <!--タブ3ページ目-->
-    <ContentPage Title="Tab3">
-        <BoxView Color="Green"/>
-    </ContentPage>
-
-</TabbedPage>
+    </ContentPage.Content>
+</ContentPage>

@@ -23,6 +23,7 @@ namespace Menu
 
             // ListViewを生成する
             this.listView.ItemsSource = array1;
+
         }
 
         private void Select_SearchButtonPressed(object sender, EventArgs e)

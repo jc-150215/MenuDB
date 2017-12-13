@@ -4,7 +4,8 @@
              x:Class="Menu.Menu">
     <ContentPage.Content>
 
-        <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Vertical"
+                     Spacing="45">
 
             <Picker x:Name="Sort" Title="並び替え">
                     <Picker.Items>
@@ -16,6 +17,8 @@
             <SearchBar x:Name="Select" 
                            Placeholder = "入力してください"
                            SearchButtonPressed="Select_SearchButtonPressed"/>
+            
+            <Label Text=""/>
 
             <StackLayout Orientation="Horizontal">
                 

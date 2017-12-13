@@ -16,8 +16,6 @@ namespace Menu
         {
             InitializeComponent();
 
-            // iOSだけ、上部に余白をとる
-            this.Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
 
             int[] array1 = new int[] { 2, 3, 1, 5, 6 };
 

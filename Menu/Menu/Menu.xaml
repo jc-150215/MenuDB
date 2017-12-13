@@ -1,30 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Menu.Menu">
-    <ContentPage.Content>
+             x:Class="OXamarin.MainPage">
 
+    <!--iOSの場合は上部に余白を設ける-->
+    <ContentPage.Padding>
+        
+        <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0"/>
+        
         <StackLayout Orientation="Vertical">
-
             <Picker x:Name="Sort" Title="並び替え">
-                    <Picker.Items>
-                        <x:String>五十音順</x:String>
-                        <x:String>負荷度</x:String>
-                    </Picker.Items>
-                </Picker>
-                
-                <SearchBar x:Name="Select" 
+                <Picker.Items>
+                    <x:String>五十音順</x:String>
+                    <x:String>負荷度</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+
+        <SearchBar x:Name="Select" 
                            Placeholder = "入力してください"
                            SearchButtonPressed="Select_SearchButtonPressed"/>
-                
 
-
-            <ListView x:Name="listView"
+        <ListView x:Name="listView"
                       SeparatorColor="Black"/>
 
 
 
-        </StackLayout>
+    </ContentPage.Padding>
 
-    </ContentPage.Content>
-</ContentPage>
+    <!--タブ1ページ目-->
+    <ContentPage Title="Tab1">
+        <BoxView Color="Red"/>
+    </ContentPage>
+
+    <!--タブ2ページ目-->
+    <ContentPage Title="Tab2">
+        <BoxView Color="Blue"/>
+    </ContentPage>
+
+    <!--タブ3ページ目-->
+    <ContentPage Title="Tab3">
+        <BoxView Color="Green"/>
+    </ContentPage>
+
+</TabbedPage>

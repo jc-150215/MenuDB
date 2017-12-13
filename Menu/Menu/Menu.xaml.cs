@@ -16,12 +16,10 @@ namespace Menu
         {
             InitializeComponent();
 
-
-            int[] array1 = new int[] { 1, 2, 3, 4, 5 };
+            //int[] array1 = new int[] { 1, 2, 3, 4, 5 };
 
             // ListViewを生成する
-            this.listView.ItemsSource = array1;
-
+            //this.listView.ItemsSource = array1;
 
             this.Padding = new Thickness
             {
@@ -58,6 +56,7 @@ namespace Menu
             //tab2, tab3をChildrenプロパティに追加
             this.Children.Add(tab2);
             this.Children.Add(tab3);
+
         }
 
         private void Select_SearchButtonPressed(object sender, EventArgs e)

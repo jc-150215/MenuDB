@@ -17,15 +17,15 @@
             <SearchBar x:Name="Select" 
                            Placeholder = "入力してください"
                            SearchButtonPressed="Select_SearchButtonPressed"/>
-            
-            <Label Text=""/>
 
             <StackLayout Orientation="Horizontal">
                 
                 <Button x:Name="昇順"
+                        HeightRequest="50"
                         Clicked="昇順_Clicked"/>
                 
                 <Button x:Name="降順"
+                        HeightRequest="50"
                         Clicked="降順_Clicked"/>
 
             </StackLayout>

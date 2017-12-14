@@ -101,13 +101,13 @@ namespace Menu
             this.listView.ItemsSource = array1;
         }
 
-        private void Sort_SelectedIndexChanged(object sender, EventArgs e)
+        private void Sort_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             String s = (String)Sort.SelectedItem;
-            if (s.Equals(五十音順))
+            if (s.Equals("五十音順"))
             {
-               // 配列に値を入れる
-            　  int[] array1 = new int[] { 1, 2, 3, 4, 5 };
+                // 配列に値を入れる
+                int[] array1 = new int[] { 1, 2, 3, 4, 5 };
 
                 // ListViewを生成する
                 this.listView.ItemsSource = array1;
@@ -115,7 +115,7 @@ namespace Menu
             else
             {
                 // 配列に値を入れる
-                int[] array1 = new int[] { 5,4,3,2,1 };
+                int[] array1 = new int[] { 5, 4, 3, 2, 1 };
 
                 // ListViewを生成する
                 this.listView.ItemsSource = array1;

@@ -16,11 +16,13 @@ namespace Menu
         {
             InitializeComponent();
 
+            var str = new List<string>();
+            str.Add("aaaa");
             //配列に値を入れる
-            int[] array1 = new int[] { 2, 3, 1, 5, 6 };
+            //int[] array1 = new int[] { 2, 3, 1, 5, 6 };
 
             // ListViewを生成する
-            this.listView.ItemsSource = array1;
+            this.listView.ItemsSource = str;
         }
 
         //SearchBarを押した時のイベントハンドラ

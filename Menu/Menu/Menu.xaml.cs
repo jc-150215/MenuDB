@@ -104,7 +104,8 @@ namespace Menu
         private void Sort_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             String s = (String)Sort.SelectedItem;
-            if (s.Equals("五十音順"))
+            String g = "五十音順";
+            if (s.Equals(g))
             {
                 // 配列に値を入れる
                 int[] array1 = new int[] { 1, 2, 3, 4, 5 };

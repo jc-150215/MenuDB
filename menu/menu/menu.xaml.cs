@@ -21,9 +21,10 @@ namespace Menu
 
             // ListViewを生成する
             this.listView.ItemsSource = array1;
+
         }
 
-        String s = (String)Sort.SelectedItem;
+        
 
         //SearchBarを押した時のイベントハンドラ
         private void Select_SearchButtonPressed(object sender, EventArgs e)
@@ -103,10 +104,12 @@ namespace Menu
             this.listView.ItemsSource = array1;
         }
 
+        int s = (int)Sort.SelectedIndex;
+
         private void Sort_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             
-            if (s.Equals(五十音順))
+            if (s==0)
             {
                 // 配列に値を入れる
                 int[] array1 = new int[] { 1, 2, 3, 4, 5 };

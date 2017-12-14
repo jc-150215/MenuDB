@@ -15,17 +15,29 @@ namespace Menu
         public Menu()
         {
             InitializeComponent();
+            
+            //空白を挿入
+            this.Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
 
-
+            //配列に値を入れる
             int[] array1 = new int[] { 2, 3, 1, 5, 6 };
 
             // ListViewを生成する
             this.listView.ItemsSource = array1;
         }
 
+        //SearchBarを押した時のイベントハンドラ
         private void Select_SearchButtonPressed(object sender, EventArgs e)
         {
-            //DisplayAlert("", SearchCommand, "OK");
+            DisplayAlert("", Select.Text, "OK");
+            /*if (0<=Select.Text.IndexOf(array1))
+            {   
+            }
+            else
+            {
+                this.listView.ItemsSource = "データがありません";
+            }*/
+            
         }
 
         private void 昇順_Clicked(object sender, EventArgs e)

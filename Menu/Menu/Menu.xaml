@@ -5,7 +5,7 @@
     <ContentPage.Content>
 
         <StackLayout Orientation="Vertical"
-                     Spacing="45">
+                     Spacing="20">
 
             <Picker x:Name="Sort" Title="並び替え">
                     <Picker.Items>
@@ -17,7 +17,8 @@
             <SearchBar x:Name="Select" 
                            Placeholder = "入力してください"
                            SearchButtonPressed="Select_SearchButtonPressed"/>
-
+            
+            
             <StackLayout Orientation="Horizontal">
                 
                 <Button x:Name="昇順"
@@ -25,15 +26,26 @@
                         Clicked="昇順_Clicked"/>
                 
                 <Button x:Name="降順"
-                        HeightRequest="50"
                         Clicked="降順_Clicked"/>
 
             </StackLayout>
+            
+            
+            <BoxView 
+                BackgroundColor="Black"
+                HeightRequest="0.5"
+                WidthRequest="600"/>
+
+            <StackLayout Orientation="Vertical">
 
             <ListView x:Name="listView"
+                      WidthRequest="300"
+                      HeightRequest="70"
+                      RowHeight="100"
                       SeparatorColor="Black"/>
-            
-            
+            </StackLayout>
+
+
 
 
 

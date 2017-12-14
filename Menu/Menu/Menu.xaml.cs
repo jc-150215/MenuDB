@@ -15,15 +15,14 @@ namespace Menu
         public Menu()
         {
             InitializeComponent();
-            
-            //空白を挿入
-            this.Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
 
+            var str = new List<string>();
+            str.Add(aaa);
             //配列に値を入れる
-            int[] array1 = new int[] { 2, 3, 1, 5, 6 };
+            //int[] array1 = new int[] { 2, 3, 1, 5, 6 };
 
             // ListViewを生成する
-            this.listView.ItemsSource = array1;
+            this.listView.ItemsSource = al;
         }
 
         //SearchBarを押した時のイベントハンドラ
@@ -40,20 +39,40 @@ namespace Menu
             
         }
 
-        private void 昇順_Clicked(object sender, EventArgs e)
-        {
-            int[] array1 = new int[] { 1, 2, 3, 4, 5 };
 
-            // ListViewを生成する
-            this.listView.ItemsSource = array1;
+        private void 全部_Clicked(object sender, EventArgs e)
+        {
+
         }
 
-        private void 降順_Clicked(object sender, EventArgs e)
+        private void 腹_Clicked(object sender, EventArgs e)
         {
-            int[] array1 = new int[] { 5, 4, 3, 2, 1 };
 
-            // ListViewを生成する
-            this.listView.ItemsSource = array1;
+        }
+
+        private void 腕_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 背中_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 胸_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 肩_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 脚_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -6,6 +6,8 @@
 
         <StackLayout Orientation="Vertical"
                      Spacing="20">
+            
+            <Label Text=""
 
             <Picker x:Name="Sort" Title="並び替え">
                     <Picker.Items>
@@ -20,18 +22,58 @@
             
             
             <StackLayout Orientation="Horizontal">
+                
+                    <Frame OutlineColor="Red">
+                        <Button x:Name="全部"
+                            WidthRequest="100"
+                            HeightRequest="25"
+                            Clicked="全部_Clicked"/>
+                    </Frame>
 
                 <Frame OutlineColor="Red">
-                    <Button x:Name="昇順"
-                        Clicked="昇順_Clicked"/>
-                </Frame>
+                        <Button x:Name="腹"
+                            WidthRequest="100"
+                            HeightRequest="25"
+                           Clicked="腹_Clicked"/>
+                    </Frame>
 
-                <Frame OutlineColor="Red">
-                    <Button x:Name="降順"
-                        Clicked="降順_Clicked"/>
-                </Frame>
+                    <Frame OutlineColor="Red">
+                        <Button x:Name="腕"
+                         WidthRequest="100"
+                            HeightRequest="25"
+                        Clicked="腕_Clicked"/>
+                    </Frame>
+                
+                    <Frame OutlineColor="Red">
+                        <Button x:Name="背中"
+                                WidthRequest="100"
+                            HeightRequest="25"
+                        Clicked="背中_Clicked"/>
+                    </Frame>
+                
+                    <Frame OutlineColor="Red">
+                        <Button x:Name="胸"
+                                WidthRequest="100"
+                            HeightRequest="25"
+                        Clicked="胸_Clicked"/>
+                    </Frame>
+                
+                    <Frame OutlineColor="Red">
+                        <Button x:Name="肩"
+                                WidthRequest="100"
+                            HeightRequest="25"
+                        Clicked="肩_Clicked"/>
+                    </Frame>
+                
+                    <Frame OutlineColor="Red">
+                        <Button x:Name="脚"
+                                WidthRequest="100"
+                            HeightRequest="25"
+                        Clicked="脚_Clicked"/>
+                    </Frame>
 
-            </StackLayout>
+
+                </StackLayout>
             
             
             <BoxView 

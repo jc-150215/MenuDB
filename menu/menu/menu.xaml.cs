@@ -23,6 +23,8 @@ namespace Menu
             this.listView.ItemsSource = array1;
         }
 
+        String s = (String)Sort.SelectedItem;
+
         //SearchBarを押した時のイベントハンドラ
         private void Select_SearchButtonPressed(object sender, EventArgs e)
         {
@@ -103,7 +105,7 @@ namespace Menu
 
         private void Sort_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            String s = (String)Sort.SelectedItem;
+            
             if (s.Equals(五十音順))
             {
                 // 配列に値を入れる

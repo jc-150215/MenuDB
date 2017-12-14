@@ -6,8 +6,8 @@
 
         <StackLayout Orientation="Vertical"
                      Spacing="20">
-            
-            <Label Text=""
+
+            <Label Text=""/>
 
             <Picker x:Name="Sort" Title="並び替え">
                     <Picker.Items>

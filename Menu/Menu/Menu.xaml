@@ -20,13 +20,16 @@
             
             
             <StackLayout Orientation="Horizontal">
-                
-                <Button x:Name="昇順"
-                        HeightRequest="50"
+
+                <Frame OutlineColor="Red">
+                    <Button x:Name="昇順"
                         Clicked="昇順_Clicked"/>
-                
-                <Button x:Name="降順"
+                </Frame>
+
+                <Frame OutlineColor="Red">
+                    <Button x:Name="降順"
                         Clicked="降順_Clicked"/>
+                </Frame>
 
             </StackLayout>
             
@@ -39,9 +42,6 @@
             <StackLayout Orientation="Vertical">
 
             <ListView x:Name="listView"
-                      WidthRequest="300"
-                      HeightRequest="70"
-                      RowHeight="100"
                       SeparatorColor="Black"/>
             </StackLayout>
 

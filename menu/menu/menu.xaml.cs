@@ -41,7 +41,7 @@ namespace Menu
         private void 全部_Clicked(object sender, EventArgs e)
         {
             //配列に値を入れる
-            int[] array1 = new int[] { 1, 2, 3, 4, 5 };
+            int[] array1 = new int[] { 2, 3, 1, 5, 6 };
 
             // ListViewを生成する
             this.listView.ItemsSource = array1;
@@ -99,6 +99,27 @@ namespace Menu
 
             // ListViewを生成する
             this.listView.ItemsSource = array1;
+        }
+
+        private void Sort_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            String s = (String)Sort.SelectedItem;
+            if (s.Equals(五十音順))
+            {
+                // 配列に値を入れる
+                int[] array1 = new int[] { 1, 2, 3, 4, 5 };
+
+                // ListViewを生成する
+                this.listView.ItemsSource = array1;
+            }
+            else
+            {
+                // 配列に値を入れる
+                int[] array1 = new int[] { 5, 4, 3, 2, 1 };
+
+                // ListViewを生成する
+                this.listView.ItemsSource = array1;
+            }
         }
     }
 }

@@ -10,7 +10,7 @@
             <Label Text=""/>
 
             <Picker x:Name="Sort" Title="並び替え"
-                    SelectedIndexChanged="Sort_SelectedIndexChanged">
+                    SelectedIndexChanged="Sort_SelectedIndexChanged_1">
                     <Picker.Items>
                         <x:String>五十音順</x:String>
                         <x:String>負荷度</x:String>

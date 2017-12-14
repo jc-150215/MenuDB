@@ -25,50 +25,57 @@
                 
                     <Frame OutlineColor="Red">
                         <Button x:Name="全部"
-                            WidthRequest="100"
-                            HeightRequest="25"
+                                Text="全部"
+                            WidthRequest="75"
+                            HeightRequest="15"
                             Clicked="全部_Clicked"/>
                     </Frame>
 
                 <Frame OutlineColor="Red">
                         <Button x:Name="腹"
-                            WidthRequest="100"
-                            HeightRequest="25"
+                                Text="腹"
+                            WidthRequest="75"
+                            HeightRequest="15"
                            Clicked="腹_Clicked"/>
                     </Frame>
 
                     <Frame OutlineColor="Red">
                         <Button x:Name="腕"
-                         WidthRequest="100"
-                            HeightRequest="25"
+                                Text="腕"
+                         WidthRequest="75"
+                            HeightRequest="15"
                         Clicked="腕_Clicked"/>
                     </Frame>
                 
                     <Frame OutlineColor="Red">
                         <Button x:Name="背中"
-                                WidthRequest="100"
-                            HeightRequest="25"
+                                Text="背中"
+                              WidthRequest="75"
+                            HeightRequest="15"
                         Clicked="背中_Clicked"/>
                     </Frame>
                 
                     <Frame OutlineColor="Red">
                         <Button x:Name="胸"
-                                WidthRequest="100"
-                            HeightRequest="25"
+                                Text="胸"
+                           WidthRequest="75"
+                            HeightRequest="15"
                         Clicked="胸_Clicked"/>
                     </Frame>
                 
                     <Frame OutlineColor="Red">
                         <Button x:Name="肩"
-                                WidthRequest="100"
-                            HeightRequest="25"
+                                Text="肩"
+                              WidthRequest="75"
+                            HeightRequest="15"
                         Clicked="肩_Clicked"/>
                     </Frame>
                 
                     <Frame OutlineColor="Red">
                         <Button x:Name="脚"
-                                WidthRequest="100"
-                            HeightRequest="25"
+                                Text="脚"
+                         WidthRequest="75"
+                            HeightRequest="15"
                         Clicked="脚_Clicked"/>
                     </Frame>
 

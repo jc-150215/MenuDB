@@ -16,13 +16,11 @@ namespace Menu
         {
             InitializeComponent();
 
-            var str = new List<string>();
-            str.Add(aaa);
             //配列に値を入れる
-            //int[] array1 = new int[] { 2, 3, 1, 5, 6 };
+            int[] array1 = new int[] { 2, 3, 1, 5, 6 };
 
             // ListViewを生成する
-            this.listView.ItemsSource = str;
+            this.listView.ItemsSource = array1;
         }
 
         //SearchBarを押した時のイベントハンドラ
@@ -42,37 +40,65 @@ namespace Menu
 
         private void 全部_Clicked(object sender, EventArgs e)
         {
+            //配列に値を入れる
+            int[] array1 = new int[] { 1, 2, 3, 4, 5 };
 
+            // ListViewを生成する
+            this.listView.ItemsSource = array1;
         }
 
         private void 腹_Clicked(object sender, EventArgs e)
         {
+            //配列に値を入れる
+            int[] array1 = new int[] { 2 };
 
+            // ListViewを生成する
+            this.listView.ItemsSource = array1;
         }
 
         private void 腕_Clicked(object sender, EventArgs e)
         {
+            //配列に値を入れる
+            int[] array1 = new int[] { 2, 3};
 
+            // ListViewを生成する
+            this.listView.ItemsSource = array1;
         }
 
         private void 背中_Clicked(object sender, EventArgs e)
         {
+            //配列に値を入れる
+            int[] array1 = new int[] { 2, 3, 1};
 
+            // ListViewを生成する
+            this.listView.ItemsSource = array1;
         }
 
         private void 胸_Clicked(object sender, EventArgs e)
         {
+            //配列に値を入れる
+            int[] array1 = new int[] { 2, 3, 1, 5 };
 
+            // ListViewを生成する
+            this.listView.ItemsSource = array1;
         }
 
         private void 肩_Clicked(object sender, EventArgs e)
         {
+            //配列に値を入れる
+            int[] array1 = new int[] { 1, 5, 6 };
 
+            // ListViewを生成する
+            this.listView.ItemsSource = array1;
         }
 
         private void 脚_Clicked(object sender, EventArgs e)
         {
+            //配列に値を入れる
+            int[] array1 = new int[] { 2, 3, 1 };
 
+            // ListViewを生成する
+            this.listView.ItemsSource = array1;
         }
     }
 }

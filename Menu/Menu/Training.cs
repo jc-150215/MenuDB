@@ -10,5 +10,10 @@ namespace Menu
     { 
         public string Menu { get; set; }
         public string Load { get; set; }
+
+        public override string ToString()
+        {
+            return Menu + Load;
+        }
     }
 }

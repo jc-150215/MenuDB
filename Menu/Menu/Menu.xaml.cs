@@ -22,10 +22,8 @@ namespace Menu
                 new Training { Menu = "腹筋", Load = "☆☆☆" },
             };
 
-            foreach (Training t in training) {
                 // ListViewを生成する
-                listView.ItemsSource = Training[t];
-            }
+                listView.ItemsSource = Training;
         }
 
         

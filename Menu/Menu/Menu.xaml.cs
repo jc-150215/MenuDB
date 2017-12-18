@@ -16,21 +16,14 @@ namespace Menu
         {
             InitializeComponent();
 
-            Taining[] mArray = {
-
-                new Taining("腕立て","☆☆"),
-                new Taining("腹筋","☆☆☆"),
+            var training = new List<Training>
+            {            
+                new Taining{ Menu = "腕立て", Menu = "☆☆" },
+                new Taining { Menu = "腹筋", Menu = "☆☆☆" },
             };
 
-            List<Taining> list = new List<Taining>();
-
-            foreach (Taining t in mArray)
-            {
-                arr.Add(t);
-            }
-
             // ListViewを生成する
-            listView.ItemsSource = arr;
+            listView.ItemsSource = training;
         }
 
         

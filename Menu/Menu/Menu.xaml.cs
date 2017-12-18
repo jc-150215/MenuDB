@@ -16,12 +16,21 @@ namespace Menu
         {
             InitializeComponent();
 
-            //配列に値を入れる
-            int[] array1 = new int[] { 2, 3, 1, 5, 6 };
+            Taining[] mArray = {
+
+                new Taining("腕立て","☆☆"),
+                new Taining("腹筋","　☆☆☆"),
+            };
+
+            ArrayList arr = new ArrayList();
+
+            foreach (ArrayList arr in mArray)
+            {
+                arr.Add(arr);
+            }
 
             // ListViewを生成する
-            listView.ItemsSource = array1;
-
+            listView.ItemsSource = arr;
         }
 
         
@@ -109,9 +118,9 @@ namespace Menu
         private void Sort_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             //int s = Sort.SelectedIndex;
-            String s = (String)Sort.SelectedItem;
-            //if (s==0)
-            if (s.Equals("五十音順"))
+            String si = (String)Sort.SelectedItem;
+            //if (si==0)
+            if (si.Equals("五十音順"))
             {
                 // 配列に値を入れる
                 int[] array1 = new int[] { 1, 2, 3, 4, 5 };

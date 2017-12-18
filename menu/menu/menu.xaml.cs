@@ -20,7 +20,7 @@ namespace Menu
             int[] array1 = new int[] { 2, 3, 1, 5, 6 };
 
             // ListViewを生成する
-            this.listView.ItemsSource = array1;
+            listView.ItemsSource = array1;
 
         }
 
@@ -47,7 +47,7 @@ namespace Menu
             int[] array1 = new int[] { 2, 3, 1, 5, 6 };
 
             // ListViewを生成する
-            this.listView.ItemsSource = array1;
+            listView.ItemsSource = array1;
         }
 
         private void 腹_Clicked(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace Menu
             int[] array1 = new int[] { 2 };
 
             // ListViewを生成する
-            this.listView.ItemsSource = array1;
+            listView.ItemsSource = array1;
         }
 
         private void 腕_Clicked(object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace Menu
             int[] array1 = new int[] { 2, 3};
 
             // ListViewを生成する
-            this.listView.ItemsSource = array1;
+            listView.ItemsSource = array1;
         }
 
         private void 背中_Clicked(object sender, EventArgs e)
@@ -74,7 +74,7 @@ namespace Menu
             int[] array1 = new int[] { 2, 3, 1};
 
             // ListViewを生成する
-            this.listView.ItemsSource = array1;
+            listView.ItemsSource = array1;
         }
 
         private void 胸_Clicked(object sender, EventArgs e)
@@ -83,7 +83,7 @@ namespace Menu
             int[] array1 = new int[] { 2, 3, 1, 5 };
 
             // ListViewを生成する
-            this.listView.ItemsSource = array1;
+            listView.ItemsSource = array1;
         }
 
         private void 肩_Clicked(object sender, EventArgs e)
@@ -92,7 +92,7 @@ namespace Menu
             int[] array1 = new int[] { 1, 5, 6 };
 
             // ListViewを生成する
-            this.listView.ItemsSource = array1;
+            listView.ItemsSource = array1;
         }
 
         private void 脚_Clicked(object sender, EventArgs e)
@@ -101,24 +101,23 @@ namespace Menu
             int[] array1 = new int[] { 2, 3, 1 };
 
             // ListViewを生成する
-            this.listView.ItemsSource = array1;
+            listView.ItemsSource = array1;
         }
 
-        
+
 
         private void Sort_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             //int s = Sort.SelectedIndex;
-            String s = (String)Sort.SelectedItem;
-
-            //if (s==0)
-            if(this.s.Equals("五十音順"))
+            String si = (String)Sort.SelectedItem;
+            //if (si==0)
+            if (si.Equals("五十音順"))
             {
                 // 配列に値を入れる
                 int[] array1 = new int[] { 1, 2, 3, 4, 5 };
 
                 // ListViewを生成する
-                this.listView.ItemsSource = array1;
+                listView.ItemsSource = array1;
             }
             else
             {
@@ -126,7 +125,7 @@ namespace Menu
                 int[] array1 = new int[] { 5, 4, 3, 2, 1 };
 
                 // ListViewを生成する
-                this.listView.ItemsSource = array1;
+                listView.ItemsSource = array1;
             }
         }
     }

@@ -82,7 +82,8 @@
             <StackLayout Orientation="Vertical">
 
             <ListView x:Name="listView"
-                      SeparatorColor="Black"/>
+                      SeparatorColor="Black"
+                      ItemTapped="listView_ItemTapped"/>
             </StackLayout>
 
 

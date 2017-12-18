@@ -23,7 +23,7 @@ namespace Menu
             };
 
                 // ListViewを生成する
-                listView.ItemsSource = Training;
+                listView.ItemsSource = training;
         }
 
         
@@ -129,6 +129,11 @@ namespace Menu
                 // ListViewを生成する
                 listView.ItemsSource = array1;
             }
+        }
+
+        private void listView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            Navigation.PushAsync(new MenudetaliPage());
         }
     }
 }

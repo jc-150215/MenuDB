@@ -104,13 +104,14 @@ namespace Menu
             listView.ItemsSource = array1;
         }
 
-        //int s = Sort.SelectedIndex;
-        String s = (String)Sort.SelectedItem;
+
 
         private void Sort_SelectedIndexChanged_1(object sender, EventArgs e)
         {
+            //int s = Sort.SelectedIndex;
+            String s = (String)Sort.SelectedItem;
             //if (s==0)
-            if(s.Equals("五十音順"))
+            if (s.Equals("五十音順"))
             {
                 // 配列に値を入れる
                 int[] array1 = new int[] { 1, 2, 3, 4, 5 };

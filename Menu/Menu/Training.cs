@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Menu
 {
-    class Training
+    public class Training
     { 
         public string Menu { get; set; }
         public string Load { get; set; }

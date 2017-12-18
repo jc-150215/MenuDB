@@ -14,7 +14,6 @@ namespace Menu
         //コンストラクタ
         public Training(String menu, String load)
         {
-            super();
             this.menu = menu;
             this.load = load;
         }

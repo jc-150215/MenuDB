@@ -16,12 +16,21 @@ namespace Menu
         {
             InitializeComponent();
 
-            //配列に値を入れる
-            int[] array1 = new int[] { 2, 3, 1, 5, 6 };
+            Taining[] mArray = {
+
+                new Taining("腕立て","☆☆"),
+                new Taining("腹筋","　☆☆☆"),
+            };
+
+            ArrayList arr = new ArrayList();
+
+            foreach (ArrayList arr in mArray)
+            {
+                arr.Add(arr);
+            }
 
             // ListViewを生成する
-            listView.ItemsSource = array1;
-
+            listView.ItemsSource = arr;
         }
 
         

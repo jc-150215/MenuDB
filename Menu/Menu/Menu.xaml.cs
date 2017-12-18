@@ -18,8 +18,8 @@ namespace Menu
 
             var training = new List<Training>
             {            
-                new Taining{ Menu = "腕立て", Menu = "☆☆" },
-                new Taining { Menu = "腹筋", Menu = "☆☆☆" },
+                new Training { Menu = "腕立て", Menu = "☆☆" },
+                new Training { Menu = "腹筋", Menu = "☆☆☆" },
             };
 
             // ListViewを生成する

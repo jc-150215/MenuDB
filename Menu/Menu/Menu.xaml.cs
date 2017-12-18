@@ -19,10 +19,10 @@ namespace Menu
             Taining[] mArray = {
 
                 new Taining("腕立て","☆☆"),
-                new Taining("腹筋","　☆☆☆"),
+                new Taining("腹筋","☆☆☆"),
             };
 
-            ArrayList<Taining> list = new ArrayList<Taining>();
+            List<Taining> list = new List<Taining>();
 
             foreach (Taining t in mArray)
             {

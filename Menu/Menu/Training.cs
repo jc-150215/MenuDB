@@ -11,7 +11,6 @@ namespace Menu
         private String menu;   
         private String load;    
 
-
         public Training(String menu, String load)
         {
             this.menu = menu;

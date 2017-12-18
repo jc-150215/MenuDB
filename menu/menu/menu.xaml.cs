@@ -22,11 +22,11 @@ namespace Menu
                 new Taining("腹筋","　☆☆☆"),
             };
 
-            ArrayList arr = new ArrayList();
+            ArrayList<Taining> list = new ArrayList<Taining>();
 
-            foreach (ArrayList arr in mArray)
+            foreach (Taining t in mArray)
             {
-                arr.Add(arr);
+                arr.Add(t);
             }
 
             // ListViewを生成する

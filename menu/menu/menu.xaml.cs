@@ -116,7 +116,7 @@ namespace Menu
             if (si.Equals("五十音順"))
             {
                 // 配列に値を入れる
-                int[] array1 = new int[] { 1, 2, 3, 4, 5 };
+                int[] array1 = new int[] { 5, 4, 3, 2, 1 };
 
                 // ListViewを生成する
                 listView.ItemsSource = array1;
@@ -129,12 +129,6 @@ namespace Menu
                 // ListViewを生成する
                 listView.ItemsSource = array1;
             }
-        }
-
-        private void listView_ItemTapped_1(object sender, ItemTappedEventArgs e)
-        {
-            this.lblSelected.Text = e.Item.ToString();
-            Navigation.PushAsync(new MenudetaliPage());
         }
     }
 }

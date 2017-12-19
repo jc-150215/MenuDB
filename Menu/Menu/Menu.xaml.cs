@@ -129,10 +129,5 @@ namespace Menu
                 listView.ItemsSource = array1;
             }
         }
-
-        /*private void listView_ItemTapped_1(object sender, ItemTappedEventArgs e)
-        {
-            Navigation.PushAsync(new MenudetaliPage());
-        }*/
     }
 }

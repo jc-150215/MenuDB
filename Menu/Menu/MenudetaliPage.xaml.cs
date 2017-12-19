@@ -12,7 +12,6 @@ namespace Menu
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenudetaliPage : ContentPage
     {
-
         public MenudetaliPage(String l)
         {
             InitializeComponent();

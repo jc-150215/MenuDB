@@ -136,7 +136,8 @@ namespace Menu
 
             // DisplayAlert("", , "OK");
 
-            String l = listView.SelectedItem.ToString();
+            String l = listView.SelectedItem;
+                //.ToString();
 
             Navigation.PushAsync(new MenudetaliPage(l));
         }

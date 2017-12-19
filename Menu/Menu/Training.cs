@@ -13,7 +13,7 @@ namespace Menu
 
         public override string ToString()
         {
-            return Menu + Load;
+            return Menu + "                    " +Load;
         }
     }
 }

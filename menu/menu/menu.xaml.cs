@@ -133,9 +133,8 @@ namespace Menu
 
         private void listView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            String l = listView.SelectedItem;
 
-            DisplayAlert("", l.ToString(), "OK");
+            DisplayAlert("", listView.SelectedItem.ToString(), "OK");
 
             //Navigation.PushAsync(new MenudetaliPage());
         }

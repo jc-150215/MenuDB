@@ -43,7 +43,7 @@ namespace Menu
         }
 
 
-        private void 全部_Clicked(object sender, EventArgs e)
+        private void 全部_Clicked(object sender, EventArgs e, int[] array1)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 2, 3, 1, 5, 6 };
@@ -52,7 +52,7 @@ namespace Menu
             listView.ItemsSource = array1;
         }
 
-        private void 腹_Clicked(object sender, EventArgs e)
+        private void 腹_Clicked(object sender, EventArgs e, int[] array1)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 2 };
@@ -61,7 +61,7 @@ namespace Menu
             listView.ItemsSource = array1;
         }
 
-        private void 腕_Clicked(object sender, EventArgs e)
+        private void 腕_Clicked(object sender, EventArgs e, int[] array1)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 2, 3};
@@ -70,7 +70,7 @@ namespace Menu
             listView.ItemsSource = array1;
         }
 
-        private void 背中_Clicked(object sender, EventArgs e)
+        private void 背中_Clicked(object sender, EventArgs e, int[] array1)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 2, 3, 1};
@@ -79,7 +79,7 @@ namespace Menu
             listView.ItemsSource = array1;
         }
 
-        private void 胸_Clicked(object sender, EventArgs e)
+        private void 胸_Clicked(object sender, EventArgs e, int[] array1)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 2, 3, 1, 5 };
@@ -88,7 +88,7 @@ namespace Menu
             listView.ItemsSource = array1;
         }
 
-        private void 肩_Clicked(object sender, EventArgs e)
+        private void 肩_Clicked(object sender, EventArgs e, int[] array1)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 1, 5, 6 };
@@ -97,7 +97,7 @@ namespace Menu
             listView.ItemsSource = array1;
         }
 
-        private void 脚_Clicked(object sender, EventArgs e)
+        private void 脚_Clicked(object sender, EventArgs e, int[] array1)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 2, 3, 1 };
@@ -115,8 +115,7 @@ namespace Menu
             //if (si==0)
             if (si.Equals("五十音順"))
             {
-                // 配列に値を入れる
-                int[] array1 = new int[] { 1, 2, 3, 4, 5 };
+                array1 = array1.Sort();
 
                 // ListViewを生成する
                 listView.ItemsSource = array1;
@@ -131,9 +130,9 @@ namespace Menu
             }
         }
 
-        private void listView_ItemTapped_1(object sender, ItemTappedEventArgs e)
+        /*private void listView_ItemTapped_1(object sender, ItemTappedEventArgs e)
         {
             Navigation.PushAsync(new MenudetaliPage());
-        }
+        }*/
     }
 }

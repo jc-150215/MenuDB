@@ -4,9 +4,12 @@
              x:Class="Menu.MenudetaliPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text=""
+                   x:Name="Label"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

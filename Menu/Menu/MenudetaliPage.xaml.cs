@@ -16,7 +16,12 @@ namespace Menu
         {
             InitializeComponent();
 
-            
+            Label = l;
         }
-    }
+
+            public MenudetaliPage(String l)
+            {
+            this.l = l;
+            }
+     }
 }

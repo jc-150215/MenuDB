@@ -16,12 +16,18 @@ namespace Menu
         {
             InitializeComponent();
 
-            Label = l;
         }
 
-            public MenudetaliPage(String l)
+        public MenudetaliPage(String l)
+        {
+            InitializeComponent();
+
+            Label.Text = l;
+        }
+
+            /*public MenudetaliPage(String l)
             {
             this.l = l;
-            }
+            }*/
      }
 }

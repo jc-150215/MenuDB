@@ -13,6 +13,8 @@ namespace Menu
         {
             InitializeComponent();
 
+            Menu = new NavigationPage(new Menu());
+
             MainPage = new Menu();
         }
         protected override void OnStart()

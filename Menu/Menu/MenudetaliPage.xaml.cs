@@ -16,7 +16,7 @@ namespace Menu
         {
             InitializeComponent();
 
-            MenudetaliPage = new NavigationPage(new MenudetaliPage());
+            
         }
     }
 }

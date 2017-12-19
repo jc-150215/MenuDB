@@ -15,6 +15,8 @@ namespace Menu
         public MenudetaliPage()
         {
             InitializeComponent();
+
+            MenudetaliPage = new NavigationPage(new MenudetaliPage());
         }
     }
 }

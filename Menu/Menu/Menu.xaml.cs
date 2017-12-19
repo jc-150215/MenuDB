@@ -133,7 +133,6 @@ namespace Menu
 
         private void listView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-          
             Navigation.PushAsync(new MenudetaliPage());
         }
     }

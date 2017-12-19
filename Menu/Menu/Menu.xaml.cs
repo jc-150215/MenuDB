@@ -131,7 +131,7 @@ namespace Menu
             }
         }
 
-        private void listView_ItemTapped(object sender, ItemTappedEventArgs e)
+        private void listView_ItemTapped_1(object sender, ItemTappedEventArgs e)
         {
             Navigation.PushAsync(new MenudetaliPage());
         }

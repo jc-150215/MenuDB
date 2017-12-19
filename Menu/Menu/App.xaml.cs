@@ -13,7 +13,7 @@ namespace Menu
         {
             InitializeComponent();
 
-            Menu = new NavigationPage(new Menu());
+            MainPage = new NavigationPage(new MainPage());
 
             MainPage = new Menu();
         }

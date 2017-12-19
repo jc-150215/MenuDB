@@ -72,7 +72,7 @@
 
 
             </StackLayout>
-            
+           
             
             <BoxView 
                 BackgroundColor="Black"
@@ -83,7 +83,7 @@
 
             <ListView x:Name="listView"
                       SeparatorColor="Black"
-                      />
+                      ItemTapped="listView_ItemTapped"/>
             </StackLayout>
 
 

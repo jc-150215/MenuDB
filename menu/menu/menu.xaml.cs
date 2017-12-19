@@ -131,8 +131,9 @@ namespace Menu
             }
         }
 
-        private void listView_ItemTapped(object sender, ItemTappedEventArgs e)
+        private void listView_ItemTapped_1(object sender, ItemTappedEventArgs e)
         {
+            this.lblSelected.Text = e.Item.ToString();
             Navigation.PushAsync(new MenudetaliPage());
         }
     }

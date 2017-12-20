@@ -24,7 +24,7 @@ namespace Menu
             };
 
                 // ListViewを生成する
-                listView.ItemsSource = Training.Menu;
+                listView.ItemsSource = training;
         }
 
         
@@ -137,7 +137,7 @@ namespace Menu
 
             // DisplayAlert("", , "OK");
 
-            String l = listView.SelectedItem.ToString();
+            String l = listView.SelectedItem.ToString(new Training.Menu());
 
             Navigation.PushAsync(new MenudetaliPage(l));
         }

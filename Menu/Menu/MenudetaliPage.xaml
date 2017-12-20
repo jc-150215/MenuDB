@@ -8,7 +8,7 @@
                    x:Name="Label"
                    VerticalOptions="StartAndExpand"/>
 
-            <Image Source="gym_training2"/>
+            
 
 
 

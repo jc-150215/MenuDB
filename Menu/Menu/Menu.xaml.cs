@@ -20,7 +20,6 @@ namespace Menu
             {            
                 new Training { Menu = "腕立て", Load = "☆☆" },
                 new Training { Menu = "腹筋", Load = "☆☆☆" },
-                
             };
 
                 // ListViewを生成する
@@ -33,6 +32,7 @@ namespace Menu
         private void Select_SearchButtonPressed(object sender, EventArgs e)
         {
             DisplayAlert("", Select.Text, "OK");
+
             /*if (0<=Select.Text.IndexOf(array1))
             {   
             }
@@ -137,7 +137,10 @@ namespace Menu
 
             // DisplayAlert("", , "OK");
 
-            String l = listView.SelectedItem.ToString(new Training(Menu));
+             Training  training = ( Training ) listView.SelectedItem;
+            String l = training.Menu;
+
+
 
             Navigation.PushAsync(new MenudetaliPage(l));
         }

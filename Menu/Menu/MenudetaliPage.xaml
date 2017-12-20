@@ -3,13 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Menu.MenudetaliPage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Orientation="Vertical">
             <Label Text=""
                    x:Name="Label"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            
-            
+                   VerticalOptions="StartAndExpand"/>
+
+            <Image Source="gym_training2"/>
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

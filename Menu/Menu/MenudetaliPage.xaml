@@ -4,12 +4,15 @@
              x:Class="Menu.MenudetaliPage">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
+            
             <Label Text=""
-                   x:Name="Label"
+                   x:Name="Transition"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="StartAndExpand"
                    FontSize="Large"
                    FontAttributes="Bold"/>
+            
+            
             
 
             

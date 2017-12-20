@@ -16,7 +16,8 @@ namespace Menu
         {
             InitializeComponent();
 
-            Label.Text = l;
+
+            Transition.Text = l;
         }
 
             /*public MenudetaliPage(String l)

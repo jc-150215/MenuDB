@@ -20,6 +20,7 @@ namespace Menu
             {            
                 new Training { Menu = "腕立て", Load = "☆☆" },
                 new Training { Menu = "腹筋", Load = "☆☆☆" },
+                
             };
 
                 // ListViewを生成する

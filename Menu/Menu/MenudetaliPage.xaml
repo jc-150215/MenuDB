@@ -6,7 +6,7 @@
         <StackLayout Orientation="Vertical">
             <Label Text=""
                    x:Name="Label"
-                   VerticalOptions="StartAndExpand"/>
+                   VerticalOptions="CenterAndExpand"/>
 
             
 

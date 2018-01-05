@@ -16,9 +16,9 @@ namespace Menu
         public Menu()
         {
             InitializeComponent();
-
-
         }
+
+
         protected override async void OnAppearing()
         {
             TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
@@ -27,16 +27,19 @@ namespace Menu
 
             if (itemList.Count < 1)
             {
-                await itemDataBase.SaveItemAsync(new Training { Menu = "腕立て", Load = "☆☆" });
-                await itemDataBase.SaveItemAsync(new Training { Menu = "腹筋", Load = "☆☆☆" });
+                await storeInitialData(itemDataBase);
                 itemList = await itemDataBase.GetItemsAsync();
-
             }
-
-
 
             // ListViewを生成する
             listView.ItemsSource = itemList;
+        }
+
+        private static async Task storeInitialData(TrainingDatabase itemDataBase)
+        {
+            await itemDataBase.SaveItemAsync(new Training { Menu = "腕立て", Load = "☆☆" ,parts="腕"});
+            await itemDataBase.SaveItemAsync(new Training { Menu = "腹筋", Load = "☆☆☆" ,parts="腹"});
+            await itemDataBase.SaveItemAsync(new Training { Menu = "サイドレイズ", Load = "☆☆☆" ,parts="肩"});
         }
 
 

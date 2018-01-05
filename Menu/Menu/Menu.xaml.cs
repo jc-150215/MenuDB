@@ -138,7 +138,7 @@ namespace Menu
             // DisplayAlert("", , "OK");
 
              Training  training = ( Training ) listView.SelectedItem;
-            String l = training.Menu;
+             String l = training.Menu;
 
 
 

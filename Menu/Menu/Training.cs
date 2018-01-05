@@ -20,7 +20,7 @@ namespace Menu
 
         public override string ToString()
         {
-            return Menu + "                                                                                負荷度：" +Load;
+            return Menu + "   " + Load;                                                                               負荷度：" +Load;
         }
 
     }

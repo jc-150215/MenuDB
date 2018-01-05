@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Menu.sqlite;
 
 namespace Menu
 {
@@ -16,17 +17,29 @@ namespace Menu
         {
             InitializeComponent();
 
-            var training = new List<Training>
-            {            
-                new Training { Menu = "腕立て", Load = "☆☆" },
-                new Training { Menu = "腹筋", Load = "☆☆☆" },
-            };
 
-                // ListViewを生成する
-                listView.ItemsSource = training;
+        }
+        protected override async void OnAppearing()
+        {
+            TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
+            List<Training> itemList;
+            itemList = await itemDataBase.GetItemsAsync();
+
+            if (itemList.Count < 1)
+            {
+                await itemDataBase.SaveItemAsync(new Training { Menu = "腕立て", Load = "☆☆" });
+                await itemDataBase.SaveItemAsync(new Training { Menu = "腹筋", Load = "☆☆☆" });
+                itemList = await itemDataBase.GetItemsAsync();
+
+            }
+
+
+
+            // ListViewを生成する
+            listView.ItemsSource = itemList;
         }
 
-        
+
 
         //SearchBarを押した時のイベントハンドラ
         private void Select_SearchButtonPressed(object sender, EventArgs e)

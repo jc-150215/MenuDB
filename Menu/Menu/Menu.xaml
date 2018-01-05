@@ -22,7 +22,7 @@
                            SearchButtonPressed="Select_SearchButtonPressed"/>
             
             
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" BackgroundColor="Aqua">
 
 
                 <Button x:Name="全部"

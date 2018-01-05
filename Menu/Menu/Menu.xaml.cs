@@ -42,8 +42,6 @@ namespace Menu
             await itemDataBase.SaveItemAsync(new Training { Menu = "サイドレイズ", Load = "☆" ,parts="肩"});
         }
 
-
-
         //SearchBarを押した時のイベントハンドラ
         private void Select_SearchButtonPressed(object sender, EventArgs e)
         {
@@ -58,7 +56,6 @@ namespace Menu
             }*/
             
         }
-
 
         private async void 全部_Clicked(object sender, EventArgs e)
         {

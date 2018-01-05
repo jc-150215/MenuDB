@@ -39,7 +39,7 @@ namespace Menu
         {
             await itemDataBase.SaveItemAsync(new Training { Menu = "腕立て", Load = "☆☆" ,parts="腕"});
             await itemDataBase.SaveItemAsync(new Training { Menu = "腹筋", Load = "☆☆☆" ,parts="腹"});
-            await itemDataBase.SaveItemAsync(new Training { Menu = "サイドレイズ", Load = "☆☆☆" ,parts="肩"});
+            await itemDataBase.SaveItemAsync(new Training { Menu = "サイドレイズ", Load = "☆" ,parts="肩"});
         }
 
 

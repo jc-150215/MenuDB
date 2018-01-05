@@ -8,7 +8,6 @@ namespace Menu
 {
     public class Training
     {
-        private String Menu;
 
         public string Menu { get; set; }
         public string Load { get; set; }

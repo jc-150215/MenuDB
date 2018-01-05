@@ -39,6 +39,11 @@ namespace Menu.sqlite
         {
             return database.Table<Training>().Where(i => i.Menu == menu).FirstOrDefaultAsync();
         }
+        public Task<List<Training>> GetItemsAsyncByParts(String parts)
+        {
+            return database.Table<Training>().Where(i => i.parts == parts).ToListAsync();
+        }
+
 
         public Task<int> SaveItemAsync(Training item)
         {

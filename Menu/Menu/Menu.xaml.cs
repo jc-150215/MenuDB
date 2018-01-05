@@ -60,67 +60,62 @@ namespace Menu
         }
 
 
-        private void 全部_Clicked(object sender, EventArgs e)
+        private async void 全部_Clicked(object sender, EventArgs e)
         {
-            //配列に値を入れる
-            int[] array1 = new int[] { 2, 3, 1, 5, 6 };
+            TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
+            List<Training> itemList = await itemDataBase.GetItemsAsync();
+            listView.ItemsSource = itemList;
 
-            // ListViewを生成する
-            listView.ItemsSource = array1;
         }
 
-        private void 腹_Clicked(object sender, EventArgs e)
+        private async void 腹_Clicked(object sender, EventArgs e)
         {
-            //配列に値を入れる
-            int[] array1 = new int[] { 2 };
+            TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
+            List<Training> itemList = await itemDataBase.GetItemsAsyncByParts("腹");
 
-            // ListViewを生成する
-            listView.ItemsSource = array1;
+            listView.ItemsSource = itemList;
         }
 
-        private void 腕_Clicked(object sender, EventArgs e)
+        private async void 腕_Clicked(object sender, EventArgs e)
         {
-            //配列に値を入れる
-            int[] array1 = new int[] { 2, 3};
+            TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
+            List<Training> itemList = await itemDataBase.GetItemsAsyncByParts("腕");
 
-            // ListViewを生成する
-            listView.ItemsSource = array1;
+            listView.ItemsSource = itemList;
+
         }
 
-        private void 背中_Clicked(object sender, EventArgs e)
+        private async void 背中_Clicked(object sender, EventArgs e)
         {
-            //配列に値を入れる
-            int[] array1 = new int[] { 2, 3, 1};
+            TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
+            List<Training> itemList = await itemDataBase.GetItemsAsyncByParts("背中");
 
-            // ListViewを生成する
-            listView.ItemsSource = array1;
+            listView.ItemsSource = itemList;
         }
 
-        private void 胸_Clicked(object sender, EventArgs e)
+        private async void 胸_Clicked(object sender, EventArgs e)
         {
             //配列に値を入れる
-            int[] array1 = new int[] { 2, 3, 1, 5 };
+            TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
+            List<Training> itemList = await itemDataBase.GetItemsAsyncByParts("胸");
 
-            // ListViewを生成する
-            listView.ItemsSource = array1;
+            listView.ItemsSource = itemList;
         }
 
-        private void 肩_Clicked(object sender, EventArgs e)
+        private async void 肩_Clicked(object sender, EventArgs e)
         {
-            //配列に値を入れる
-            int[] array1 = new int[] { 1, 5, 6 };
+            TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
+            List<Training> itemList = await itemDataBase.GetItemsAsyncByParts("肩");
 
-            // ListViewを生成する
-            listView.ItemsSource = array1;
+            listView.ItemsSource = itemList;
         }
 
-        private void 脚_Clicked(object sender, EventArgs e)
+        private async void 脚_Clicked(object sender, EventArgs e)
         {
-            //配列に値を入れる
-            int[] array1 = new int[] { 2, 3, 1 };
+            TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
+            List<Training> itemList = await itemDataBase.GetItemsAsyncByParts("脚");
 
-            // ListViewを生成する
-            listView.ItemsSource = array1;
+            listView.ItemsSource = itemList;
         }
 
 

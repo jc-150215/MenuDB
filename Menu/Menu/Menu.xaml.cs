@@ -18,7 +18,6 @@ namespace Menu
             InitializeComponent();
         }
 
-
         protected override async void OnAppearing()
         {
             TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
@@ -32,7 +31,7 @@ namespace Menu
             }
 
             // ListViewを生成する
-            listView.ItemsSource = itemList;
+//            listView.ItemsSource = itemList;
         }
 
         private static async Task storeInitialData(TrainingDatabase itemDataBase)
@@ -86,16 +85,13 @@ namespace Menu
         {
             TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
             List<Training> itemList = await itemDataBase.GetItemsAsyncByParts("背中");
-
             listView.ItemsSource = itemList;
         }
 
         private async void 胸_Clicked(object sender, EventArgs e)
         {
-            //配列に値を入れる
             TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
             List<Training> itemList = await itemDataBase.GetItemsAsyncByParts("胸");
-
             listView.ItemsSource = itemList;
         }
 
@@ -103,7 +99,6 @@ namespace Menu
         {
             TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
             List<Training> itemList = await itemDataBase.GetItemsAsyncByParts("肩");
-
             listView.ItemsSource = itemList;
         }
 
@@ -111,7 +106,6 @@ namespace Menu
         {
             TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
             List<Training> itemList = await itemDataBase.GetItemsAsyncByParts("脚");
-
             listView.ItemsSource = itemList;
         }
 
@@ -147,8 +141,6 @@ namespace Menu
 
              Training  training = ( Training ) listView.SelectedItem;
              String l = training.Menu;
-
-
 
             Navigation.PushAsync(new MenudetaliPage(l));
         }

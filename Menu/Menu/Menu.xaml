@@ -21,7 +21,6 @@
                            Placeholder = "入力してください"
                            SearchButtonPressed="Select_SearchButtonPressed"/>
             
-            
             <StackLayout Orientation="Horizontal" BackgroundColor="Aqua">
 
 

@@ -13,14 +13,14 @@ namespace Menu
         public string Menu { get; set; }
         public string Load { get; set; }
 
-        public Stirng getMenu()
+        public String getMenu()
         {
             return Menu;
         }
 
         public override string ToString()
         {
-            return Menu + "   " + Load;                                                                               負荷度：" +Load;
+            return Menu + "                                                                                負荷度：" +Load;
         }
 
     }

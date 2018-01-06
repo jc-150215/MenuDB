@@ -57,6 +57,11 @@ namespace Menu.sqlite
             }
         }
 
+        public Task<int> InsertItemAsync(Training item)
+        {
+                return database.InsertAsync(item);
+        }
+
         public Task<int> DeleteItemAsync(Training item)
         {
             return database.DeleteAsync(item);

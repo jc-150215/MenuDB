@@ -31,14 +31,15 @@ namespace Menu
             }
 
             // ListViewを生成する
-//            listView.ItemsSource = itemList;
+            listView.ItemsSource = itemList;
         }
 
         private static async Task storeInitialData(TrainingDatabase itemDataBase)
         {
-            await itemDataBase.SaveItemAsync(new Training { Menu = "腕立て", Load = "☆☆" ,parts="腕"});
-            await itemDataBase.SaveItemAsync(new Training { Menu = "腹筋", Load = "☆☆☆" ,parts="腹"});
-            await itemDataBase.SaveItemAsync(new Training { Menu = "サイドレイズ", Load = "☆" ,parts="肩"});
+            Training pushup = new Training() { Menu = "腕立て", Load = "☆☆", parts = "腕" };
+            await itemDataBase.InsertItemAsync(pushup);
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "腹筋", Load = "☆☆☆" ,parts="腹"});
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "サイドレイズ", Load = "☆" ,parts="肩"});
         }
 
         //SearchBarを押した時のイベントハンドラ

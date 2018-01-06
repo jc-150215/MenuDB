@@ -10,7 +10,7 @@ namespace Menu
 {
     public class Training
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey]
 
         public string Menu { get; set; }
         public string Load { get; set; }

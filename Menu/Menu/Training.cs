@@ -26,6 +26,7 @@ namespace Menu
             return Menu + 
                 "                                                                                負荷度：" 
                 +Load;
+
         }
 
     }

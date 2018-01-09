@@ -20,9 +20,9 @@ namespace Menu
             Transition.Text = l;
         }
 
-            /*public MenudetaliPage(String l)
-            {
-            this.l = l;
-            }*/
-     }
+        /*public MenudetaliPage(String l)
+        {
+        this.l = l;
+        }*/
+    }
 }

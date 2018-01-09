@@ -14,9 +14,9 @@ namespace Menu
 
         public string Menu { get; set; }
         public string Load { get; set; }
-        public String parts { get; set; }
+        public string parts { get; set; }
 
-        public String getMenu()
+        public string getMenu()
         {
             return Menu;
         }
